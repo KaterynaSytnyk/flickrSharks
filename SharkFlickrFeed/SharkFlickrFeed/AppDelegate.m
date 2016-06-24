@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppearanceManager.h"
+#import "LoggingManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [AppearanceManager setupAppearanceForApplication];
+    [[LoggingManager sharedManager] startLogging];
+    
     return YES;
 }
 

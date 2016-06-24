@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Proxima_Nova_Bold.otf</string>
+        <string>Proxima_Nova_Regular.otf</string>
+        <string>Proxima_Nova_Light.otf</string>
+    </array>
 </dict>
 </plist>
