@@ -1,15 +1,15 @@
 //
-//  ViewController.h
+//  FlickrNetworkManager.h
 //  SharkFlickrFeed
 //
 //  Created by Kateryna Sytnyk on 6/24/16.
 //  Copyright © 2016 KaterynaSytnyk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface FlickrNetworkManager : NSObject
 
++ (instancetype)sharedManager;
 
 @end
-

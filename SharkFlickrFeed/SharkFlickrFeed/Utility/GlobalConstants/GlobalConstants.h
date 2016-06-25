@@ -9,6 +9,8 @@
 #ifndef GlobalConstants_h
 #define GlobalConstants_h
 
+static NSString *const FlickrAPIKey = @"949e98778755d1982f537d56236bbb42";
+
 typedef void(^DefaultCompletionBlock)(void);
 typedef void(^DefaultSuccessHandler)(void);
 typedef void(^DefaultErrorHandler)(NSString *localizedErrorMessage);

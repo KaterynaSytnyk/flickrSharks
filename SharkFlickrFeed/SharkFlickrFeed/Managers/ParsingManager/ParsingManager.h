@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class SharkPhoto;
 @class Acronym;
 
 @interface ParsingManager : NSObject
