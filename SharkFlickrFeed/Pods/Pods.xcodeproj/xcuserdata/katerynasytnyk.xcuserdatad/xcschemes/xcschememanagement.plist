@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworkActivityLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FastEasyMapping.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +37,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91038A4DB48EF85C5CA1AC78644BCB5A</key>
+		<key>5EA94E3357CB6918D14CF6C129484928</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF8F6F8226A34C0F4B224C6935D94D86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC0D1D30F031352A2DB09856D4D19BD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

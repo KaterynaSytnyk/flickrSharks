@@ -45,7 +45,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-NM-uCZ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Downloading" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-NM-uCZ">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-iw-8RN">
@@ -67,6 +67,33 @@
                                     <outlet property="cellActivityIndicator" destination="gGo-iw-8RN" id="jYI-3q-tRX"/>
                                     <outlet property="sharkImageView" destination="3Ru-NM-uCZ" id="59L-ao-b62"/>
                                     <segue destination="fBq-LY-GnZ" kind="presentation" identifier="SharkDetails" id="OQf-c4-qDz"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xS4-eV-t6Y" customClass="NoPhotoCollectionViewCell">
+                                <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, the photo service returned something different than expected" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-1y-Kgt">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="ChG-1y-Kgt" firstAttribute="leading" secondItem="xS4-eV-t6Y" secondAttribute="leading" id="Axa-hG-VY9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ChG-1y-Kgt" secondAttribute="bottom" id="C7U-JO-xM4"/>
+                                    <constraint firstAttribute="trailing" secondItem="ChG-1y-Kgt" secondAttribute="trailing" id="F4d-WG-YfJ"/>
+                                    <constraint firstItem="ChG-1y-Kgt" firstAttribute="top" secondItem="xS4-eV-t6Y" secondAttribute="top" id="xcH-Gy-yzV"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="messageLabel" destination="ChG-1y-Kgt" id="DMh-m7-vgA"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -115,4 +142,7 @@
             <point key="canvasLocation" x="142" y="551"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Downloading" width="100" height="100"/>
+    </resources>
 </document>

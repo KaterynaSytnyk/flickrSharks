@@ -8,29 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6843D1781D1DCE46000D4842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1771D1DCE46000D4842 /* main.m */; };
-		6843D17B1D1DCE46000D4842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D17A1D1DCE46000D4842 /* AppDelegate.m */; };
-		6843D1811D1DCE46000D4842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D17F1D1DCE46000D4842 /* Main.storyboard */; };
-		6843D1831D1DCE46000D4842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6843D1821D1DCE46000D4842 /* Assets.xcassets */; };
-		6843D1861D1DCE46000D4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D1841D1DCE46000D4842 /* LaunchScreen.storyboard */; };
 		6843D1931D1DD961000D4842 /* Proxima_Nova_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6843D1901D1DD961000D4842 /* Proxima_Nova_Bold.otf */; };
 		6843D1941D1DD961000D4842 /* Proxima_Nova_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6843D1911D1DD961000D4842 /* Proxima_Nova_Light.otf */; };
 		6843D1951D1DD961000D4842 /* Proxima_Nova_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6843D1921D1DD961000D4842 /* Proxima_Nova_Regular.otf */; };
-		6843D1AA1D1DD973000D4842 /* GlobalLocalizations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D19E1D1DD973000D4842 /* GlobalLocalizations.m */; };
-		6843D1AB1D1DD973000D4842 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1A21D1DD973000D4842 /* NSString+Utility.m */; };
-		6843D1AC1D1DD973000D4842 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1A51D1DD973000D4842 /* UIColor+Utility.m */; };
-		6843D1AD1D1DD973000D4842 /* UIFont+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1A81D1DD973000D4842 /* UIFont+Utility.m */; };
-		6843D1BB1D1DDA26000D4842 /* AppearanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1B11D1DDA26000D4842 /* AppearanceManager.m */; };
-		6843D1BC1D1DDA26000D4842 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1B41D1DDA26000D4842 /* DataManager.m */; };
-		6843D1BD1D1DDA26000D4842 /* LoggingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1B71D1DDA26000D4842 /* LoggingManager.m */; };
-		6843D1BE1D1DDA26000D4842 /* ParsingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1BA1D1DDA26000D4842 /* ParsingManager.m */; };
-		6843D1C51D1DDD20000D4842 /* SharkPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1C41D1DDD20000D4842 /* SharkPhotoCollectionViewCell.m */; };
-		6843D1CD1D1DDF77000D4842 /* SharkPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1CC1D1DDF77000D4842 /* SharkPhotoCollectionViewController.m */; };
-		6843D1D11D1DECD2000D4842 /* SharkPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1D01D1DECD2000D4842 /* SharkPhotoDetailsViewController.m */; };
-		6843D1D51D1DED1A000D4842 /* SharkPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1D41D1DED1A000D4842 /* SharkPhoto.m */; };
-		6843D1D91D1DED63000D4842 /* FlickrSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1D81D1DED63000D4842 /* FlickrSearchResult.m */; };
-		6843D1E01D1DEDB1000D4842 /* FlickrNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1DF1D1DEDB1000D4842 /* FlickrNetworkManager.m */; };
-		6843D1E61D1E024E000D4842 /* BouncePresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1E51D1E024E000D4842 /* BouncePresentAnimationController.m */; };
-		6843D1E91D1E025A000D4842 /* ShrinkDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1E81D1E025A000D4842 /* ShrinkDismissAnimationController.m */; };
+		6843D2401D1F11B6000D4842 /* AppearanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D1F91D1F11B6000D4842 /* AppearanceManager.m */; };
+		6843D2441D1F11B6000D4842 /* BouncePresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2031D1F11B6000D4842 /* BouncePresentAnimationController.m */; };
+		6843D2451D1F11B6000D4842 /* ShrinkDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2061D1F11B6000D4842 /* ShrinkDismissAnimationController.m */; };
+		6843D2461D1F11B6000D4842 /* SharkPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2091D1F11B6000D4842 /* SharkPhotoCollectionViewController.m */; };
+		6843D2471D1F11B6000D4842 /* SharkPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D20C1D1F11B6000D4842 /* SharkPhotoDetailsViewController.m */; };
+		6843D2481D1F11B6000D4842 /* NoPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2111D1F11B6000D4842 /* NoPhotoCollectionViewCell.m */; };
+		6843D2491D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2141D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m */; };
+		6843D24A1D1F11B6000D4842 /* FlickrNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2181D1F11B6000D4842 /* FlickrNetworkManager.m */; };
+		6843D24B1D1F11B6000D4842 /* ParsingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D21B1D1F11B6000D4842 /* ParsingManager.m */; };
+		6843D24C1D1F11B6000D4842 /* NSError+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2201D1F11B6000D4842 /* NSError+Utility.m */; };
+		6843D24D1D1F11B6000D4842 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2231D1F11B6000D4842 /* NSString+Utility.m */; };
+		6843D24E1D1F11B6000D4842 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2261D1F11B6000D4842 /* UIColor+Utility.m */; };
+		6843D24F1D1F11B6000D4842 /* UIFont+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2291D1F11B6000D4842 /* UIFont+Utility.m */; };
+		6843D2501D1F11B6000D4842 /* LoggingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D22C1D1F11B6000D4842 /* LoggingManager.m */; };
+		6843D2511D1F11B6000D4842 /* GlobalLocalizations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2321D1F11B6000D4842 /* GlobalLocalizations.m */; };
+		6843D2521D1F11B6000D4842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2351D1F11B6000D4842 /* AppDelegate.m */; };
+		6843D2531D1F11B6000D4842 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2381D1F11B6000D4842 /* DataManager.m */; };
+		6843D2551D1F11B6000D4842 /* SharkPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D23F1D1F11B6000D4842 /* SharkPhoto.m */; };
+		6843D2591D1F1221000D4842 /* BaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2581D1F1221000D4842 /* BaseNetworkManager.m */; };
+		6843D25E1D1F14E1000D4842 /* FlickrSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */; };
+		6843D2641D1F1BF3000D4842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2631D1F1BF3000D4842 /* Assets.xcassets */; };
+		6843D2671D1F1C0C000D4842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2651D1F1C0C000D4842 /* Main.storyboard */; };
+		6843D2681D1F1C0C000D4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */; };
 		FF60871D9BB0C5B1502627DC /* libPods-SharkFlickrFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */; };
 /* End PBXBuildFile section */
 
@@ -38,48 +41,54 @@
 		5C8432C1CBE198CA71A8AF3D /* Pods-SharkFlickrFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkFlickrFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharkFlickrFeed/Pods-SharkFlickrFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		6843D1731D1DCE46000D4842 /* SharksFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharksFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6843D1771D1DCE46000D4842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6843D1791D1DCE46000D4842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6843D17A1D1DCE46000D4842 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6843D1801D1DCE46000D4842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6843D1821D1DCE46000D4842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6843D1851D1DCE46000D4842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6843D1871D1DCE46000D4842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6843D1901D1DD961000D4842 /* Proxima_Nova_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Proxima_Nova_Bold.otf; sourceTree = "<group>"; };
 		6843D1911D1DD961000D4842 /* Proxima_Nova_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Proxima_Nova_Light.otf; sourceTree = "<group>"; };
 		6843D1921D1DD961000D4842 /* Proxima_Nova_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Proxima_Nova_Regular.otf; sourceTree = "<group>"; };
-		6843D19B1D1DD973000D4842 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
-		6843D19D1D1DD973000D4842 /* GlobalLocalizations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLocalizations.h; sourceTree = "<group>"; };
-		6843D19E1D1DD973000D4842 /* GlobalLocalizations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalLocalizations.m; sourceTree = "<group>"; };
-		6843D1A11D1DD973000D4842 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
-		6843D1A21D1DD973000D4842 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
-		6843D1A41D1DD973000D4842 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
-		6843D1A51D1DD973000D4842 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
-		6843D1A71D1DD973000D4842 /* UIFont+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Utility.h"; sourceTree = "<group>"; };
-		6843D1A81D1DD973000D4842 /* UIFont+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Utility.m"; sourceTree = "<group>"; };
-		6843D1B01D1DDA26000D4842 /* AppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceManager.h; sourceTree = "<group>"; };
-		6843D1B11D1DDA26000D4842 /* AppearanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceManager.m; sourceTree = "<group>"; };
-		6843D1B31D1DDA26000D4842 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		6843D1B41D1DDA26000D4842 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		6843D1B61D1DDA26000D4842 /* LoggingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingManager.h; sourceTree = "<group>"; };
-		6843D1B71D1DDA26000D4842 /* LoggingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingManager.m; sourceTree = "<group>"; };
-		6843D1B91D1DDA26000D4842 /* ParsingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingManager.h; sourceTree = "<group>"; };
-		6843D1BA1D1DDA26000D4842 /* ParsingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingManager.m; sourceTree = "<group>"; };
-		6843D1C31D1DDD20000D4842 /* SharkPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoCollectionViewCell.h; sourceTree = "<group>"; };
-		6843D1C41D1DDD20000D4842 /* SharkPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoCollectionViewCell.m; sourceTree = "<group>"; };
-		6843D1CB1D1DDF77000D4842 /* SharkPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoCollectionViewController.h; sourceTree = "<group>"; };
-		6843D1CC1D1DDF77000D4842 /* SharkPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoCollectionViewController.m; sourceTree = "<group>"; };
-		6843D1CF1D1DECD2000D4842 /* SharkPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoDetailsViewController.h; sourceTree = "<group>"; };
-		6843D1D01D1DECD2000D4842 /* SharkPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoDetailsViewController.m; sourceTree = "<group>"; };
-		6843D1D31D1DED1A000D4842 /* SharkPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhoto.h; sourceTree = "<group>"; };
-		6843D1D41D1DED1A000D4842 /* SharkPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhoto.m; sourceTree = "<group>"; };
-		6843D1D71D1DED63000D4842 /* FlickrSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchResult.h; sourceTree = "<group>"; };
-		6843D1D81D1DED63000D4842 /* FlickrSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchResult.m; sourceTree = "<group>"; };
-		6843D1DE1D1DEDB1000D4842 /* FlickrNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrNetworkManager.h; sourceTree = "<group>"; };
-		6843D1DF1D1DEDB1000D4842 /* FlickrNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrNetworkManager.m; sourceTree = "<group>"; };
-		6843D1E41D1E024E000D4842 /* BouncePresentAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimationController.h; sourceTree = "<group>"; };
-		6843D1E51D1E024E000D4842 /* BouncePresentAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimationController.m; sourceTree = "<group>"; };
-		6843D1E71D1E025A000D4842 /* ShrinkDismissAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissAnimationController.h; sourceTree = "<group>"; };
-		6843D1E81D1E025A000D4842 /* ShrinkDismissAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissAnimationController.m; sourceTree = "<group>"; };
+		6843D1F81D1F11B6000D4842 /* AppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceManager.h; sourceTree = "<group>"; };
+		6843D1F91D1F11B6000D4842 /* AppearanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceManager.m; sourceTree = "<group>"; };
+		6843D2021D1F11B6000D4842 /* BouncePresentAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimationController.h; sourceTree = "<group>"; };
+		6843D2031D1F11B6000D4842 /* BouncePresentAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimationController.m; sourceTree = "<group>"; };
+		6843D2051D1F11B6000D4842 /* ShrinkDismissAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissAnimationController.h; sourceTree = "<group>"; };
+		6843D2061D1F11B6000D4842 /* ShrinkDismissAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissAnimationController.m; sourceTree = "<group>"; };
+		6843D2081D1F11B6000D4842 /* SharkPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		6843D2091D1F11B6000D4842 /* SharkPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		6843D20B1D1F11B6000D4842 /* SharkPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoDetailsViewController.h; sourceTree = "<group>"; };
+		6843D20C1D1F11B6000D4842 /* SharkPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoDetailsViewController.m; sourceTree = "<group>"; };
+		6843D2101D1F11B6000D4842 /* NoPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		6843D2111D1F11B6000D4842 /* NoPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		6843D2131D1F11B6000D4842 /* SharkPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		6843D2141D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		6843D2171D1F11B6000D4842 /* FlickrNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrNetworkManager.h; sourceTree = "<group>"; };
+		6843D2181D1F11B6000D4842 /* FlickrNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrNetworkManager.m; sourceTree = "<group>"; };
+		6843D21A1D1F11B6000D4842 /* ParsingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingManager.h; sourceTree = "<group>"; };
+		6843D21B1D1F11B6000D4842 /* ParsingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingManager.m; sourceTree = "<group>"; };
+		6843D21F1D1F11B6000D4842 /* NSError+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Utility.h"; sourceTree = "<group>"; };
+		6843D2201D1F11B6000D4842 /* NSError+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Utility.m"; sourceTree = "<group>"; };
+		6843D2221D1F11B6000D4842 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		6843D2231D1F11B6000D4842 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		6843D2251D1F11B6000D4842 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
+		6843D2261D1F11B6000D4842 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
+		6843D2281D1F11B6000D4842 /* UIFont+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Utility.h"; sourceTree = "<group>"; };
+		6843D2291D1F11B6000D4842 /* UIFont+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Utility.m"; sourceTree = "<group>"; };
+		6843D22B1D1F11B6000D4842 /* LoggingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingManager.h; sourceTree = "<group>"; };
+		6843D22C1D1F11B6000D4842 /* LoggingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingManager.m; sourceTree = "<group>"; };
+		6843D22F1D1F11B6000D4842 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
+		6843D2311D1F11B6000D4842 /* GlobalLocalizations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLocalizations.h; sourceTree = "<group>"; };
+		6843D2321D1F11B6000D4842 /* GlobalLocalizations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalLocalizations.m; sourceTree = "<group>"; };
+		6843D2341D1F11B6000D4842 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6843D2351D1F11B6000D4842 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6843D2371D1F11B6000D4842 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		6843D2381D1F11B6000D4842 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		6843D23E1D1F11B6000D4842 /* SharkPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkPhoto.h; sourceTree = "<group>"; };
+		6843D23F1D1F11B6000D4842 /* SharkPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhoto.m; sourceTree = "<group>"; };
+		6843D2571D1F1221000D4842 /* BaseNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworkManager.h; sourceTree = "<group>"; };
+		6843D2581D1F1221000D4842 /* BaseNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworkManager.m; sourceTree = "<group>"; };
+		6843D25C1D1F14E1000D4842 /* FlickrSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchResult.h; sourceTree = "<group>"; };
+		6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchResult.m; sourceTree = "<group>"; };
+		6843D2631D1F1BF3000D4842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6843D2651D1F1C0C000D4842 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD66604A22AEDDC2FD1E319B /* Pods-SharkFlickrFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkFlickrFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharkFlickrFeed/Pods-SharkFlickrFeed.release.xcconfig"; sourceTree = "<group>"; };
 		C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharkFlickrFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,15 +143,10 @@
 		6843D1751D1DCE46000D4842 /* SharkFlickrFeed */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1791D1DCE46000D4842 /* AppDelegate.h */,
-				6843D17A1D1DCE46000D4842 /* AppDelegate.m */,
-				6843D17F1D1DCE46000D4842 /* Main.storyboard */,
-				6843D1BF1D1DDAA6000D4842 /* Views */,
-				6843D1961D1DD973000D4842 /* ViewControllers */,
-				6843D1C01D1DDAA6000D4842 /* Models */,
-				6843D1AE1D1DDA26000D4842 /* Managers */,
-				6843D19F1D1DD973000D4842 /* Categories */,
-				6843D1991D1DD973000D4842 /* Utility */,
+				6843D2331D1F11B6000D4842 /* BusinessLayer */,
+				6843D1F61D1F11B6000D4842 /* PresentationLayer */,
+				6843D2151D1F11B6000D4842 /* NetworkLayer */,
+				6843D21C1D1F11B6000D4842 /* Helpers */,
 				6843D1761D1DCE46000D4842 /* Supporting Files */,
 			);
 			path = SharkFlickrFeed;
@@ -151,9 +155,8 @@
 		6843D1761D1DCE46000D4842 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6843D2631D1F1BF3000D4842 /* Assets.xcassets */,
 				6843D18D1D1DD961000D4842 /* Resources */,
-				6843D1821D1DCE46000D4842 /* Assets.xcassets */,
-				6843D1841D1DCE46000D4842 /* LaunchScreen.storyboard */,
 				6843D1871D1DCE46000D4842 /* Info.plist */,
 				6843D1771D1DCE46000D4842 /* main.m */,
 			);
@@ -186,231 +189,299 @@
 			path = Proxima;
 			sourceTree = "<group>";
 		};
-		6843D1961D1DD973000D4842 /* ViewControllers */ = {
+		6843D1F61D1F11B6000D4842 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1E11D1E023B000D4842 /* AnimationControllers */,
-				6843D1CE1D1DECBB000D4842 /* SharkPhotoDetailsViewController */,
-				6843D1CA1D1DDF77000D4842 /* SharkPhotoCollectionViewController */,
+				6843D2651D1F1C0C000D4842 /* Main.storyboard */,
+				6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */,
+				6843D1FF1D1F11B6000D4842 /* ViewControllers */,
+				6843D20D1D1F11B6000D4842 /* Views */,
+				6843D1F71D1F11B6000D4842 /* AppearanceManager */,
 			);
-			path = ViewControllers;
+			path = PresentationLayer;
 			sourceTree = "<group>";
 		};
-		6843D1991D1DD973000D4842 /* Utility */ = {
+		6843D1F71D1F11B6000D4842 /* AppearanceManager */ = {
 			isa = PBXGroup;
 			children = (
-				6843D19A1D1DD973000D4842 /* GlobalConstants */,
-				6843D19C1D1DD973000D4842 /* GlobalLocalizations */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		6843D19A1D1DD973000D4842 /* GlobalConstants */ = {
-			isa = PBXGroup;
-			children = (
-				6843D19B1D1DD973000D4842 /* GlobalConstants.h */,
-			);
-			path = GlobalConstants;
-			sourceTree = "<group>";
-		};
-		6843D19C1D1DD973000D4842 /* GlobalLocalizations */ = {
-			isa = PBXGroup;
-			children = (
-				6843D19D1D1DD973000D4842 /* GlobalLocalizations.h */,
-				6843D19E1D1DD973000D4842 /* GlobalLocalizations.m */,
-			);
-			path = GlobalLocalizations;
-			sourceTree = "<group>";
-		};
-		6843D19F1D1DD973000D4842 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1A01D1DD973000D4842 /* NSString+Utility */,
-				6843D1A31D1DD973000D4842 /* UIColor+Utility */,
-				6843D1A61D1DD973000D4842 /* UIFont+Utility */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		6843D1A01D1DD973000D4842 /* NSString+Utility */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1A11D1DD973000D4842 /* NSString+Utility.h */,
-				6843D1A21D1DD973000D4842 /* NSString+Utility.m */,
-			);
-			path = "NSString+Utility";
-			sourceTree = "<group>";
-		};
-		6843D1A31D1DD973000D4842 /* UIColor+Utility */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1A41D1DD973000D4842 /* UIColor+Utility.h */,
-				6843D1A51D1DD973000D4842 /* UIColor+Utility.m */,
-			);
-			path = "UIColor+Utility";
-			sourceTree = "<group>";
-		};
-		6843D1A61D1DD973000D4842 /* UIFont+Utility */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1A71D1DD973000D4842 /* UIFont+Utility.h */,
-				6843D1A81D1DD973000D4842 /* UIFont+Utility.m */,
-			);
-			path = "UIFont+Utility";
-			sourceTree = "<group>";
-		};
-		6843D1AE1D1DDA26000D4842 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1DD1D1DEDB1000D4842 /* FlickrNetworkManager */,
-				6843D1AF1D1DDA26000D4842 /* AppearanceManager */,
-				6843D1B21D1DDA26000D4842 /* DataManager */,
-				6843D1B51D1DDA26000D4842 /* LoggingManager */,
-				6843D1B81D1DDA26000D4842 /* ParsingManager */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		6843D1AF1D1DDA26000D4842 /* AppearanceManager */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1B01D1DDA26000D4842 /* AppearanceManager.h */,
-				6843D1B11D1DDA26000D4842 /* AppearanceManager.m */,
+				6843D1F81D1F11B6000D4842 /* AppearanceManager.h */,
+				6843D1F91D1F11B6000D4842 /* AppearanceManager.m */,
 			);
 			path = AppearanceManager;
 			sourceTree = "<group>";
 		};
-		6843D1B21D1DDA26000D4842 /* DataManager */ = {
+		6843D1FF1D1F11B6000D4842 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1B31D1DDA26000D4842 /* DataManager.h */,
-				6843D1B41D1DDA26000D4842 /* DataManager.m */,
+				6843D2001D1F11B6000D4842 /* AnimationControllers */,
+				6843D2071D1F11B6000D4842 /* SharkPhotoCollectionViewController */,
+				6843D20A1D1F11B6000D4842 /* SharkPhotoDetailsViewController */,
 			);
-			path = DataManager;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		6843D1B51D1DDA26000D4842 /* LoggingManager */ = {
+		6843D2001D1F11B6000D4842 /* AnimationControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1B61D1DDA26000D4842 /* LoggingManager.h */,
-				6843D1B71D1DDA26000D4842 /* LoggingManager.m */,
-			);
-			path = LoggingManager;
-			sourceTree = "<group>";
-		};
-		6843D1B81D1DDA26000D4842 /* ParsingManager */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1B91D1DDA26000D4842 /* ParsingManager.h */,
-				6843D1BA1D1DDA26000D4842 /* ParsingManager.m */,
-			);
-			path = ParsingManager;
-			sourceTree = "<group>";
-		};
-		6843D1BF1D1DDAA6000D4842 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1C11D1DDCD7000D4842 /* CollectionViewCells */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6843D1C01D1DDAA6000D4842 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1D61D1DED57000D4842 /* FlickrSearchResult */,
-				6843D1D21D1DED07000D4842 /* SharkPhoto */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		6843D1C11D1DDCD7000D4842 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1C21D1DDCD7000D4842 /* SharkPhotoCollectionViewCell */,
-			);
-			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
-		6843D1C21D1DDCD7000D4842 /* SharkPhotoCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1C31D1DDD20000D4842 /* SharkPhotoCollectionViewCell.h */,
-				6843D1C41D1DDD20000D4842 /* SharkPhotoCollectionViewCell.m */,
-			);
-			path = SharkPhotoCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		6843D1CA1D1DDF77000D4842 /* SharkPhotoCollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1CB1D1DDF77000D4842 /* SharkPhotoCollectionViewController.h */,
-				6843D1CC1D1DDF77000D4842 /* SharkPhotoCollectionViewController.m */,
-			);
-			path = SharkPhotoCollectionViewController;
-			sourceTree = "<group>";
-		};
-		6843D1CE1D1DECBB000D4842 /* SharkPhotoDetailsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1CF1D1DECD2000D4842 /* SharkPhotoDetailsViewController.h */,
-				6843D1D01D1DECD2000D4842 /* SharkPhotoDetailsViewController.m */,
-			);
-			path = SharkPhotoDetailsViewController;
-			sourceTree = "<group>";
-		};
-		6843D1D21D1DED07000D4842 /* SharkPhoto */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1D31D1DED1A000D4842 /* SharkPhoto.h */,
-				6843D1D41D1DED1A000D4842 /* SharkPhoto.m */,
-			);
-			path = SharkPhoto;
-			sourceTree = "<group>";
-		};
-		6843D1D61D1DED57000D4842 /* FlickrSearchResult */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1D71D1DED63000D4842 /* FlickrSearchResult.h */,
-				6843D1D81D1DED63000D4842 /* FlickrSearchResult.m */,
-			);
-			path = FlickrSearchResult;
-			sourceTree = "<group>";
-		};
-		6843D1DD1D1DEDB1000D4842 /* FlickrNetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1DE1D1DEDB1000D4842 /* FlickrNetworkManager.h */,
-				6843D1DF1D1DEDB1000D4842 /* FlickrNetworkManager.m */,
-			);
-			path = FlickrNetworkManager;
-			sourceTree = "<group>";
-		};
-		6843D1E11D1E023B000D4842 /* AnimationControllers */ = {
-			isa = PBXGroup;
-			children = (
-				6843D1E21D1E023B000D4842 /* BouncePresentAnimationController */,
-				6843D1E31D1E023B000D4842 /* ShrinkDismissAnimationController */,
+				6843D2011D1F11B6000D4842 /* BouncePresentAnimationController */,
+				6843D2041D1F11B6000D4842 /* ShrinkDismissAnimationController */,
 			);
 			path = AnimationControllers;
 			sourceTree = "<group>";
 		};
-		6843D1E21D1E023B000D4842 /* BouncePresentAnimationController */ = {
+		6843D2011D1F11B6000D4842 /* BouncePresentAnimationController */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1E41D1E024E000D4842 /* BouncePresentAnimationController.h */,
-				6843D1E51D1E024E000D4842 /* BouncePresentAnimationController.m */,
+				6843D2021D1F11B6000D4842 /* BouncePresentAnimationController.h */,
+				6843D2031D1F11B6000D4842 /* BouncePresentAnimationController.m */,
 			);
 			path = BouncePresentAnimationController;
 			sourceTree = "<group>";
 		};
-		6843D1E31D1E023B000D4842 /* ShrinkDismissAnimationController */ = {
+		6843D2041D1F11B6000D4842 /* ShrinkDismissAnimationController */ = {
 			isa = PBXGroup;
 			children = (
-				6843D1E71D1E025A000D4842 /* ShrinkDismissAnimationController.h */,
-				6843D1E81D1E025A000D4842 /* ShrinkDismissAnimationController.m */,
+				6843D2051D1F11B6000D4842 /* ShrinkDismissAnimationController.h */,
+				6843D2061D1F11B6000D4842 /* ShrinkDismissAnimationController.m */,
 			);
 			path = ShrinkDismissAnimationController;
+			sourceTree = "<group>";
+		};
+		6843D2071D1F11B6000D4842 /* SharkPhotoCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2081D1F11B6000D4842 /* SharkPhotoCollectionViewController.h */,
+				6843D2091D1F11B6000D4842 /* SharkPhotoCollectionViewController.m */,
+			);
+			path = SharkPhotoCollectionViewController;
+			sourceTree = "<group>";
+		};
+		6843D20A1D1F11B6000D4842 /* SharkPhotoDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6843D20B1D1F11B6000D4842 /* SharkPhotoDetailsViewController.h */,
+				6843D20C1D1F11B6000D4842 /* SharkPhotoDetailsViewController.m */,
+			);
+			path = SharkPhotoDetailsViewController;
+			sourceTree = "<group>";
+		};
+		6843D20D1D1F11B6000D4842 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6843D20E1D1F11B6000D4842 /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6843D20E1D1F11B6000D4842 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6843D20F1D1F11B6000D4842 /* NoPhotoCollectionViewCell */,
+				6843D2121D1F11B6000D4842 /* SharkPhotoCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		6843D20F1D1F11B6000D4842 /* NoPhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2101D1F11B6000D4842 /* NoPhotoCollectionViewCell.h */,
+				6843D2111D1F11B6000D4842 /* NoPhotoCollectionViewCell.m */,
+			);
+			path = NoPhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6843D2121D1F11B6000D4842 /* SharkPhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2131D1F11B6000D4842 /* SharkPhotoCollectionViewCell.h */,
+				6843D2141D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m */,
+			);
+			path = SharkPhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6843D2151D1F11B6000D4842 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6843D25A1D1F14E1000D4842 /* NetworkModels */,
+				6843D2561D1F11F7000D4842 /* BaseNetworkManager */,
+				6843D2161D1F11B6000D4842 /* FlickrNetworkManager */,
+				6843D2191D1F11B6000D4842 /* ParsingManager */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		6843D2161D1F11B6000D4842 /* FlickrNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2171D1F11B6000D4842 /* FlickrNetworkManager.h */,
+				6843D2181D1F11B6000D4842 /* FlickrNetworkManager.m */,
+			);
+			path = FlickrNetworkManager;
+			sourceTree = "<group>";
+		};
+		6843D2191D1F11B6000D4842 /* ParsingManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D21A1D1F11B6000D4842 /* ParsingManager.h */,
+				6843D21B1D1F11B6000D4842 /* ParsingManager.m */,
+			);
+			path = ParsingManager;
+			sourceTree = "<group>";
+		};
+		6843D21C1D1F11B6000D4842 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6843D21D1D1F11B6000D4842 /* Categories */,
+				6843D22A1D1F11B6000D4842 /* LoggingManager */,
+				6843D22D1D1F11B6000D4842 /* Utility */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6843D21D1D1F11B6000D4842 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6843D21E1D1F11B6000D4842 /* NSError+Utility */,
+				6843D2211D1F11B6000D4842 /* NSString+Utility */,
+				6843D2241D1F11B6000D4842 /* UIColor+Utility */,
+				6843D2271D1F11B6000D4842 /* UIFont+Utility */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6843D21E1D1F11B6000D4842 /* NSError+Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D21F1D1F11B6000D4842 /* NSError+Utility.h */,
+				6843D2201D1F11B6000D4842 /* NSError+Utility.m */,
+			);
+			path = "NSError+Utility";
+			sourceTree = "<group>";
+		};
+		6843D2211D1F11B6000D4842 /* NSString+Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2221D1F11B6000D4842 /* NSString+Utility.h */,
+				6843D2231D1F11B6000D4842 /* NSString+Utility.m */,
+			);
+			path = "NSString+Utility";
+			sourceTree = "<group>";
+		};
+		6843D2241D1F11B6000D4842 /* UIColor+Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2251D1F11B6000D4842 /* UIColor+Utility.h */,
+				6843D2261D1F11B6000D4842 /* UIColor+Utility.m */,
+			);
+			path = "UIColor+Utility";
+			sourceTree = "<group>";
+		};
+		6843D2271D1F11B6000D4842 /* UIFont+Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2281D1F11B6000D4842 /* UIFont+Utility.h */,
+				6843D2291D1F11B6000D4842 /* UIFont+Utility.m */,
+			);
+			path = "UIFont+Utility";
+			sourceTree = "<group>";
+		};
+		6843D22A1D1F11B6000D4842 /* LoggingManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D22B1D1F11B6000D4842 /* LoggingManager.h */,
+				6843D22C1D1F11B6000D4842 /* LoggingManager.m */,
+			);
+			path = LoggingManager;
+			sourceTree = "<group>";
+		};
+		6843D22D1D1F11B6000D4842 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D22E1D1F11B6000D4842 /* GlobalConstants */,
+				6843D2301D1F11B6000D4842 /* GlobalLocalizations */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6843D22E1D1F11B6000D4842 /* GlobalConstants */ = {
+			isa = PBXGroup;
+			children = (
+				6843D22F1D1F11B6000D4842 /* GlobalConstants.h */,
+			);
+			path = GlobalConstants;
+			sourceTree = "<group>";
+		};
+		6843D2301D1F11B6000D4842 /* GlobalLocalizations */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2311D1F11B6000D4842 /* GlobalLocalizations.h */,
+				6843D2321D1F11B6000D4842 /* GlobalLocalizations.m */,
+			);
+			path = GlobalLocalizations;
+			sourceTree = "<group>";
+		};
+		6843D2331D1F11B6000D4842 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2341D1F11B6000D4842 /* AppDelegate.h */,
+				6843D2351D1F11B6000D4842 /* AppDelegate.m */,
+				6843D2361D1F11B6000D4842 /* DataManager */,
+				6843D2391D1F11B6000D4842 /* Models */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		6843D2361D1F11B6000D4842 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2371D1F11B6000D4842 /* DataManager.h */,
+				6843D2381D1F11B6000D4842 /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		6843D2391D1F11B6000D4842 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6843D23D1D1F11B6000D4842 /* SharkPhoto */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6843D23D1D1F11B6000D4842 /* SharkPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				6843D23E1D1F11B6000D4842 /* SharkPhoto.h */,
+				6843D23F1D1F11B6000D4842 /* SharkPhoto.m */,
+			);
+			path = SharkPhoto;
+			sourceTree = "<group>";
+		};
+		6843D2561D1F11F7000D4842 /* BaseNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2571D1F1221000D4842 /* BaseNetworkManager.h */,
+				6843D2581D1F1221000D4842 /* BaseNetworkManager.m */,
+			);
+			path = BaseNetworkManager;
+			sourceTree = "<group>";
+		};
+		6843D25A1D1F14E1000D4842 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				6843D25B1D1F14E1000D4842 /* FlickrSearchResult */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		6843D25B1D1F14E1000D4842 /* FlickrSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				6843D25C1D1F14E1000D4842 /* FlickrSearchResult.h */,
+				6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */,
+			);
+			path = FlickrSearchResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,11 +544,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6843D1861D1DCE46000D4842 /* LaunchScreen.storyboard in Resources */,
-				6843D1831D1DCE46000D4842 /* Assets.xcassets in Resources */,
-				6843D1811D1DCE46000D4842 /* Main.storyboard in Resources */,
 				6843D1941D1DD961000D4842 /* Proxima_Nova_Light.otf in Resources */,
+				6843D2671D1F1C0C000D4842 /* Main.storyboard in Resources */,
 				6843D1931D1DD961000D4842 /* Proxima_Nova_Bold.otf in Resources */,
+				6843D2681D1F1C0C000D4842 /* LaunchScreen.storyboard in Resources */,
+				6843D2641D1F1BF3000D4842 /* Assets.xcassets in Resources */,
 				6843D1951D1DD961000D4842 /* Proxima_Nova_Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,47 +608,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6843D1E91D1E025A000D4842 /* ShrinkDismissAnimationController.m in Sources */,
-				6843D1BB1D1DDA26000D4842 /* AppearanceManager.m in Sources */,
-				6843D1E01D1DEDB1000D4842 /* FlickrNetworkManager.m in Sources */,
-				6843D1BE1D1DDA26000D4842 /* ParsingManager.m in Sources */,
-				6843D1AA1D1DD973000D4842 /* GlobalLocalizations.m in Sources */,
-				6843D17B1D1DCE46000D4842 /* AppDelegate.m in Sources */,
-				6843D1AB1D1DD973000D4842 /* NSString+Utility.m in Sources */,
-				6843D1D11D1DECD2000D4842 /* SharkPhotoDetailsViewController.m in Sources */,
-				6843D1D91D1DED63000D4842 /* FlickrSearchResult.m in Sources */,
-				6843D1CD1D1DDF77000D4842 /* SharkPhotoCollectionViewController.m in Sources */,
-				6843D1AC1D1DD973000D4842 /* UIColor+Utility.m in Sources */,
-				6843D1E61D1E024E000D4842 /* BouncePresentAnimationController.m in Sources */,
-				6843D1D51D1DED1A000D4842 /* SharkPhoto.m in Sources */,
+				6843D24C1D1F11B6000D4842 /* NSError+Utility.m in Sources */,
+				6843D2471D1F11B6000D4842 /* SharkPhotoDetailsViewController.m in Sources */,
+				6843D2591D1F1221000D4842 /* BaseNetworkManager.m in Sources */,
+				6843D2501D1F11B6000D4842 /* LoggingManager.m in Sources */,
+				6843D2451D1F11B6000D4842 /* ShrinkDismissAnimationController.m in Sources */,
+				6843D2461D1F11B6000D4842 /* SharkPhotoCollectionViewController.m in Sources */,
+				6843D24D1D1F11B6000D4842 /* NSString+Utility.m in Sources */,
+				6843D2551D1F11B6000D4842 /* SharkPhoto.m in Sources */,
+				6843D2491D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m in Sources */,
+				6843D2531D1F11B6000D4842 /* DataManager.m in Sources */,
+				6843D24A1D1F11B6000D4842 /* FlickrNetworkManager.m in Sources */,
 				6843D1781D1DCE46000D4842 /* main.m in Sources */,
-				6843D1BD1D1DDA26000D4842 /* LoggingManager.m in Sources */,
-				6843D1BC1D1DDA26000D4842 /* DataManager.m in Sources */,
-				6843D1AD1D1DD973000D4842 /* UIFont+Utility.m in Sources */,
-				6843D1C51D1DDD20000D4842 /* SharkPhotoCollectionViewCell.m in Sources */,
+				6843D24E1D1F11B6000D4842 /* UIColor+Utility.m in Sources */,
+				6843D24B1D1F11B6000D4842 /* ParsingManager.m in Sources */,
+				6843D2401D1F11B6000D4842 /* AppearanceManager.m in Sources */,
+				6843D25E1D1F14E1000D4842 /* FlickrSearchResult.m in Sources */,
+				6843D2481D1F11B6000D4842 /* NoPhotoCollectionViewCell.m in Sources */,
+				6843D2511D1F11B6000D4842 /* GlobalLocalizations.m in Sources */,
+				6843D2521D1F11B6000D4842 /* AppDelegate.m in Sources */,
+				6843D2441D1F11B6000D4842 /* BouncePresentAnimationController.m in Sources */,
+				6843D24F1D1F11B6000D4842 /* UIFont+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6843D17F1D1DCE46000D4842 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6843D1801D1DCE46000D4842 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6843D1841D1DCE46000D4842 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6843D1851D1DCE46000D4842 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6843D1881D1DCE46000D4842 /* Debug */ = {
