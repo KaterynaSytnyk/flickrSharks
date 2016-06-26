@@ -13,6 +13,8 @@
 #import "ShrinkDismissAnimationController.h"
 #import "SharkPhotoDetailsViewController.h"
 #import "SharkPhoto.h"
+#import "DataManager.h"
+#import "UIViewController+Utility.h"
 
 static NSString *const sharkPhotoReuseIdentifier = @"SharkPhotoCell";
 static NSString *const noPhotoReuseIdentifier = @"NoPhotoCell";
@@ -22,7 +24,7 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
 
 @interface SharkPhotoCollectionViewController () <UIViewControllerTransitioningDelegate>
 
-@property (strong, nonatomic) NSMutableArray *sharkPhotos;
+@property (strong, nonatomic) NSArray *sharkPhotos;
 
 @property (strong, nonatomic) BouncePresentAnimationController *bounceAnimationController;
 @property (strong, nonatomic) ShrinkDismissAnimationController *shrinkDismissAnimationController;
@@ -37,6 +39,25 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     [super viewDidLoad];
     
     [self setupCollectionView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    __weak typeof(self) weakSelf = self;
+    
+    [self showHideProgressHUD:YES];
+    
+    [[DataManager sharedManager] getSharkPhotosWithSuccessHandler:^(NSArray *sharkPhotos) {
+        [weakSelf showHideProgressHUD:NO];
+        weakSelf.sharkPhotos = sharkPhotos;
+        [weakSelf.collectionView reloadData];
+        
+    } errorHandler:^(NSString *localizedErrorMessage) {
+        
+        [weakSelf showHideProgressHUD:NO];
+        [weakSelf showAlertWithLocalizedTitle:@"Error" localizedMessage:localizedErrorMessage];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,42 +90,9 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
 #pragma mark - Custom Setup
 
 - (void)setupCollectionView {
-
+    //KS: TODO - add custom styling etc
 }
 
-
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"SharkDetails"]) {
-        SharkPhotoDetailsViewController *toVC = (SharkPhotoDetailsViewController *)segue.destinationViewController;
-        
-        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
-        NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
-        
-        toVC.transitioningDelegate = self;
-        
-        if (indexPath) {
-            toVC.sharkPhoto = self.sharkPhotos[indexPath.row];
-        }
-        
-        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
-    }
-}
-
-
-#pragma mark - UIViewControllerTransitioningDelegate
-
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
-                                                                  presentingController:(UIViewController *)presenting
-                                                                      sourceController:(UIViewController *)source {
-    return self.bounceAnimationController;
-}
-
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    
-    return self.shrinkDismissAnimationController;
-}
 
 
 #pragma mark <UICollectionViewDataSource>
@@ -153,6 +141,39 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     CGFloat photoCellWidth = (collectionView.bounds.size.width - collectionViewLayout.minimumInteritemSpacing * collectionViewNumberOfColumns)/collectionViewNumberOfColumns;
     
     return CGSizeMake(photoCellWidth, photoCellWidth);
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"SharkDetails"]) {
+        SharkPhotoDetailsViewController *toVC = (SharkPhotoDetailsViewController *)segue.destinationViewController;
+        
+        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+        NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
+        
+        toVC.transitioningDelegate = self;
+        
+        if (indexPath) {
+            toVC.sharkPhoto = self.sharkPhotos[indexPath.row];
+        }
+        
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    }
+}
+
+
+#pragma mark - UIViewControllerTransitioningDelegate
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source {
+    return self.bounceAnimationController;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    
+    return self.shrinkDismissAnimationController;
 }
 
 

@@ -8,6 +8,22 @@
 
 #import "ParsingManager.h"
 #import "FastEasyMapping.h"
+#import "SharkPhoto.h"
+
+static NSString *const SearchParameterString = @"text";
+static NSString *const MethodParameterString = @"method";
+static NSString *const APIKeyParameterString = @"api_key";
+static NSString *const FormatParameterString = @"format";
+static NSString *const NoJsonCallbackParameterString = @"nojsoncallback";
+static NSString *const PageParameterString = @"page";
+static NSString *const ExtrasParameterString = @"extras";
+
+static NSString *const SharkSearchString = @"shark";
+static NSString *const FlickrAPIKey = @"949e98778755d1982f537d56236bbb42";
+static NSString *const FlickrSearchMethodName = @"flickr.photos.search";
+static NSString *const FormatParameterJSON = @"json";
+static NSString *const NoJsonCallbackValue = @"1";
+static NSString *const ExtrasParameterValue = @"url_t,url_c,url_l,url_o";
 
 @interface ParsingManager ()
 
@@ -24,95 +40,84 @@
     return sharedManager;
 }
 
-//- (NSDictionary *)dictionaryContainingInfoForAcronymSearch:(Acronym *)acronym {
-//    return [FEMSerializer serializeObject:acronym usingMapping:[self acronymMappingForMeaningsSearch]];
-//}
-//
-//- (AcronymMeaning *)acronymMeaningFromDictionary:(NSDictionary *)acronymMeaningDictionary {
-//    AcronymMeaning *acronymMeaning = [FEMObjectDeserializer deserializeObjectExternalRepresentation:acronymMeaningDictionary usingMapping:[self acronymMeaningMapping]];
-//
-//    return acronymMeaning;
-//}
-//
-//- (NSArray *)acronymMeaningsArrayFromDictionary:(NSDictionary *)acronymMeaningsListDictionary {
-//    if (!acronymMeaningsListDictionary) {
-//        return nil;
-//    }
-//    
-//    id objectToMap = nil;
-//    
-//    objectToMap = acronymMeaningsListDictionary[@"lfs"];
-//    if ([objectToMap isKindOfClass:[NSArray class]]) {
-//        
-//        NSArray *acronymMeaningsArray = [self acronymMeaningsFromArray:objectToMap];
-//        return acronymMeaningsArray;
-//        
-//    } else {
-//        NSLog(@"Invalid data returned. Aborting.");
-//        return nil;
-//    }
-//}
-//
-//- (NSArray *)acronymMeaningsFromArray:(NSArray *)acronymMeaningRawArray {
-//    NSMutableArray *acronymMeanings = [NSMutableArray array];
-//    for (NSDictionary *acronymMeaningDictionary in acronymMeaningRawArray) {
-//        AcronymMeaning *acronymMeaning = [self acronymMeaningFromDictionary:acronymMeaningDictionary];
-//        [acronymMeanings addObject:acronymMeaning];
-//    }
-//    return [NSArray arrayWithArray:acronymMeanings];
-//}
-//
-//
-//#pragma mark - Mappings
-//
-//
-//- (FEMObjectMapping *)acronymMappingForMeaningsSearch {
-//    return [FEMObjectMapping mappingForClass:[Acronym class] configuration:^(FEMObjectMapping *mapping) {
-//        [mapping addAttributesFromDictionary:@{@"acronymString" : @"sf",
-//                                               }];
-//        
-//    }];
-//};
-//
-//- (FEMObjectMapping *)acronymMeaningMapping {
-//    return [FEMObjectMapping mappingForClass:[AcronymMeaning class] configuration:^(FEMObjectMapping *mapping) {
-//        [mapping addAttributesFromDictionary:@{@"fullName" : @"lf",
-//                                               @"numberOfOccuranceString" : @"freq",
-//                                               @"yearSinceString" : @"since"
-//                                               }];
-//        
-//    }];
-//};
-//
+#pragma mark - Flickr Photo Search Input Dictionaries
+
+- (NSDictionary *)dictionaryForSharkFeedSearchWithPage:(NSInteger)page {
+    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionaryWithDictionary:[self dictionaryForFlickrPhotoSearch]];
+    
+    [mutableDict setValue:SharkSearchString forKey:SearchParameterString];
+    [mutableDict setValue:[NSString stringWithFormat:@"%d", page] forKey:PageParameterString];
+    
+    return [NSDictionary dictionaryWithDictionary:mutableDict];
+}
+
+- (NSDictionary *)dictionaryForFlickrPhotoSearch {
+    NSMutableDictionary *mutableDict = [NSMutableDictionary new];
+    [mutableDict setValue:FlickrSearchMethodName forKey:MethodParameterString];
+    [mutableDict setValue:FlickrAPIKey forKey:APIKeyParameterString];
+    [mutableDict setValue:FormatParameterJSON forKey:FormatParameterString];
+    [mutableDict setValue:NoJsonCallbackValue forKey:NoJsonCallbackParameterString];
+    [mutableDict setValue:ExtrasParameterValue forKey:ExtrasParameterString];
+    
+    return [NSDictionary dictionaryWithDictionary:mutableDict];
+}
+
+- (NSArray *)sharkPhotosArrayFromDictionary:(NSDictionary *)sharkPhotosListDictionary {
+    if (!sharkPhotosListDictionary) {
+        return nil;
+    }
+
+    id rootLevelPhotosDictionary = nil;
+    id photosArray = nil;
+    rootLevelPhotosDictionary = sharkPhotosListDictionary[@"photos"];
+    
+    if ([rootLevelPhotosDictionary isKindOfClass:[NSDictionary class]]) {
+        photosArray = rootLevelPhotosDictionary[@"photo"];
+        
+    } else {
+        NSLog(@"Invalid data returned. Aborting.");
+        return nil;
+    }
+
+    
+    if ([photosArray isKindOfClass:[NSArray class]]) {
+
+        NSArray *acronymMeaningsArray = [self sharkPhotosFromArray:photosArray];
+        return acronymMeaningsArray;
+
+    } else {
+        NSLog(@"Invalid data returned. Aborting.");
+        return nil;
+    }
+}
+
+- (NSArray *)sharkPhotosFromArray:(NSArray *)sharkPhotosRawArray {
+    NSMutableArray *sharkPhotos = [NSMutableArray array];
+    for (NSDictionary *sharkPhotoDictionary in sharkPhotosRawArray) {
+        SharkPhoto *sharkPhoto = [self sharkPhotoFromDictionary:sharkPhotoDictionary];
+        [sharkPhotos addObject:sharkPhoto];
+    }
+    return [NSArray arrayWithArray:sharkPhotos];
+}
 
 
-//[{"sf": "FBI",
-// "lfs": [{"lf": "Federal Bureau of Investigation",
-//        "freq": 18,
-//        "since": 1986,
-//        "vars": [{"lf": "Federal Bureau of Investigation", "freq": 17, "since": 1986},
-//                 {"lf": "Federal Bureau of Investigations", "freq": 1, "since": 1995}]},
-//         
-//         {"lf": "Frontal Behavioral Inventory",
-//        "freq": 9,
-//        "since": 1997,
-//        "vars": [{"lf": "Frontal Behavioral Inventory", "freq": 4, "since": 1997},
-//                 {"lf": "Frontal Behavioural Inventory", "freq": 3, "since": 2005},
-//                 {"lf": "Frontal Behavior Inventory", "freq": 1, "since": 2005},
-//                 {"lf": "frontal behavioural inventory", "freq": 1, "since": 2007}]},
-//    
-//         {"lf": "fresh blood imaging",
-//        "freq": 7,
-//        "since": 2000,
-//        "vars": [{"lf": "fresh blood imaging", "freq": 6, "since": 2000},
-//                 {"lf": "fresh-blood imaging", "freq": 1, "since": 2001}]},
-//    
-//         {"lf": "foreign body infections",
-//        "freq": 4,
-//        "since": 1998,
-//        "vars": [{"lf": "foreign body infections", "freq": 2, "since": 2004},
-//                 {"lf": "Foreign-body infection", "freq": 1, "since": 2004},
-//                 {"lf": "Foreign-Body Infection", "freq": 1, "since": 1998}]}]}]
+- (SharkPhoto *)sharkPhotoFromDictionary:(NSDictionary *)photoDictionary {
+    SharkPhoto *sharkPhoto = [FEMObjectDeserializer deserializeObjectExternalRepresentation:photoDictionary usingMapping:[self sharkPhotoMapping]];
+    
+    return sharkPhoto;
+}
+
+
+#pragma mark - Mappings
+
+- (FEMObjectMapping *)sharkPhotoMapping {
+    return [FEMObjectMapping mappingForClass:[SharkPhoto class] configuration:^(FEMObjectMapping *mapping) {
+        [mapping addAttributesFromDictionary:@{@"photoTitle" : @"title",
+                                               @"thumbnailImageURL" : @"url_t",
+                                               @"largeImageURL" : @"url_l"
+                                               }];
+    }];
+};
 
 
 @end

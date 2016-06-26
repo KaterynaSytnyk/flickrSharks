@@ -54,7 +54,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.20094396572643314" green="0.25056752028780827" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="3Ru-NM-uCZ" secondAttribute="bottom" id="6IM-uc-dgH"/>
                                     <constraint firstItem="gGo-iw-8RN" firstAttribute="centerX" secondItem="auP-YV-JbQ" secondAttribute="centerX" id="HDC-1r-ovq"/>

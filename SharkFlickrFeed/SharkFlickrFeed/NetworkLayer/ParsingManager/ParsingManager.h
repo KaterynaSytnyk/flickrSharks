@@ -9,15 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @class SharkPhoto;
-@class Acronym;
 
 @interface ParsingManager : NSObject
 
 + (instancetype)sharedManager;
 
-- (NSDictionary *)dictionaryContainingInfoForAcronymSearch:(Acronym *)acronym;
-
-- (NSArray *)acronymMeaningsArrayFromDictionary:(NSDictionary *)acronymMeaningsListDictionary;
-
+- (NSDictionary *)dictionaryForSharkFeedSearchWithPage:(NSInteger)page;
+- (NSArray *)sharkPhotosArrayFromDictionary:(NSDictionary *)sharkPhotosListDictionary;
 
 @end

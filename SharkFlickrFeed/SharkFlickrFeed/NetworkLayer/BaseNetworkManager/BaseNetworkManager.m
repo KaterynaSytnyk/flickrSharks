@@ -11,8 +11,8 @@
 #import "GlobalLocalizations.h"
 #import "NSString+Utility.h"
 
-static NSString *const ServerTopLevelErrorMessageKey = @"message";
-static NSString *const BaseServerURLString = @"http://www.nactem.ac.uk/software/acromine";
+static NSString *const ServerTopLevelErrorMessageKey = @"error";
+static NSString *const BaseServerURLString = @"https://api.flickr.com/services/rest";
 
 @interface BaseNetworkManager ()
 
@@ -154,6 +154,7 @@ static NSString *const BaseServerURLString = @"http://www.nactem.ac.uk/software/
         }
         
         //KS: Add more custom status codes here
+        //KS: https://www.flickr.com/services/api/flickr.photos.search.html
     }
     
     //KS: can't define the exact error. Return default error message.

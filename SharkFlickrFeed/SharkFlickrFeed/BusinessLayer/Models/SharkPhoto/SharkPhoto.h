@@ -14,4 +14,9 @@
 @property (strong, nonatomic) UIImage *thumbnail;
 @property (strong, nonatomic) UIImage *largeImage;
 
+@property (strong, nonatomic) NSString *photoTitle;
+@property (strong, nonatomic) NSString *thumbnailImageURL;
+@property (strong, nonatomic) NSString *largeImageURL;
+
+
 @end

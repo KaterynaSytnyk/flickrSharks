@@ -34,6 +34,7 @@
 		6843D2641D1F1BF3000D4842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2631D1F1BF3000D4842 /* Assets.xcassets */; };
 		6843D2671D1F1C0C000D4842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2651D1F1C0C000D4842 /* Main.storyboard */; };
 		6843D2681D1F1C0C000D4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */; };
+		6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */; };
 		FF60871D9BB0C5B1502627DC /* libPods-SharkFlickrFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		6843D2631D1F1BF3000D4842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6843D2651D1F1C0C000D4842 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6843D26A1D1F4FAC000D4842 /* UIViewController+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utility.h"; sourceTree = "<group>"; };
+		6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utility.m"; sourceTree = "<group>"; };
 		AD66604A22AEDDC2FD1E319B /* Pods-SharkFlickrFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkFlickrFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharkFlickrFeed/Pods-SharkFlickrFeed.release.xcconfig"; sourceTree = "<group>"; };
 		C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharkFlickrFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +345,7 @@
 		6843D21D1D1F11B6000D4842 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				6843D2691D1F4F98000D4842 /* UIViewController+Utility */,
 				6843D21E1D1F11B6000D4842 /* NSError+Utility */,
 				6843D2211D1F11B6000D4842 /* NSString+Utility */,
 				6843D2241D1F11B6000D4842 /* UIColor+Utility */,
@@ -482,6 +486,15 @@
 				6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */,
 			);
 			path = FlickrSearchResult;
+			sourceTree = "<group>";
+		};
+		6843D2691D1F4F98000D4842 /* UIViewController+Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6843D26A1D1F4FAC000D4842 /* UIViewController+Utility.h */,
+				6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */,
+			);
+			path = "UIViewController+Utility";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +642,7 @@
 				6843D2521D1F11B6000D4842 /* AppDelegate.m in Sources */,
 				6843D2441D1F11B6000D4842 /* BouncePresentAnimationController.m in Sources */,
 				6843D24F1D1F11B6000D4842 /* UIFont+Utility.m in Sources */,
+				6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,9 +41,10 @@
 
 #pragma mark - Data methods
 
-//KS: returns an array of SharkPhotos
 - (void)getSharkPhotosWithSuccessHandler:(SharkPhotosFeedSuccessHandler)successHandler
                             errorHandler:(DefaultErrorHandler)errorHandler {
+    
+    [[FlickrNetworkManager sharedManager] getSharkPhotosWithSuccessHandler:successHandler errorHandler:errorHandler];
     
 }
 
