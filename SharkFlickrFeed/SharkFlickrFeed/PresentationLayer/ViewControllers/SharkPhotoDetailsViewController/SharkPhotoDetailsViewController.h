@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GlobalConstants.h"
 
 @class SharkPhoto;
 
 @interface SharkPhotoDetailsViewController : UIViewController
 
 @property (strong, nonatomic) SharkPhoto *sharkPhoto;
+@property (copy, nonatomic) DefaultCompletionBlock cancelHandler;
 
 @end

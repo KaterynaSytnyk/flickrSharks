@@ -29,11 +29,10 @@
     
     [super viewWillAppear:animated];
     
-    if (self.sharkPhoto) {
+    if (self.sharkPhoto.largeImage) {
         self.sharkImageView.image = self.sharkPhoto.largeImage;
     } else {
         self.sharkImageView.image = self.sharkPhoto.thumbnail;
-        
     }
     
 //    // 1
@@ -60,6 +59,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)cancelTapped:(id)sender {
+    if (self.cancelHandler) {
+        self.cancelHandler();
+    }
 }
 
 

@@ -108,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="-358" y="551"/>
         </scene>
-        <!--Shark Photo Details View Controller-->
+        <!--Title-->
         <scene sceneID="JvF-tN-kTg">
             <objects>
                 <viewController id="fBq-LY-GnZ" customClass="SharkPhotoDetailsViewController" sceneMemberID="viewController">
@@ -123,15 +123,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyk-Lq-WBD">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mh0-FC-xjX">
+                                <rect key="frame" x="20" y="30" width="54" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="fBq-LY-GnZ" eventType="touchUpInside" id="YKo-sB-Rq5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dyk-Lq-WBD" firstAttribute="leading" secondItem="K6H-Vi-0JA" secondAttribute="leading" id="3gQ-GX-XRG"/>
+                            <constraint firstItem="mh0-FC-xjX" firstAttribute="top" secondItem="OF8-yS-Ttk" secondAttribute="bottom" constant="10" id="HTj-pK-gbp"/>
                             <constraint firstAttribute="trailing" secondItem="dyk-Lq-WBD" secondAttribute="trailing" id="KK0-7g-hO7"/>
                             <constraint firstItem="dyk-Lq-WBD" firstAttribute="top" secondItem="OF8-yS-Ttk" secondAttribute="bottom" id="W6f-1u-w7C"/>
                             <constraint firstItem="g0t-Gq-DAG" firstAttribute="top" secondItem="dyk-Lq-WBD" secondAttribute="bottom" id="i03-Dz-XhM"/>
+                            <constraint firstItem="mh0-FC-xjX" firstAttribute="leading" secondItem="K6H-Vi-0JA" secondAttribute="leading" constant="20" id="xB3-cb-lCL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Bm9-jw-uPN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="n8M-W8-sMb">
+                            <connections>
+                                <action selector="cancelTapped:" destination="fBq-LY-GnZ" id="b6B-Py-cBq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="sharkImageView" destination="dyk-Lq-WBD" id="tr2-E2-EIS"/>
@@ -139,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ls-4b-6Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="551"/>
+            <point key="canvasLocation" x="212" y="535"/>
         </scene>
     </scenes>
     <resources>

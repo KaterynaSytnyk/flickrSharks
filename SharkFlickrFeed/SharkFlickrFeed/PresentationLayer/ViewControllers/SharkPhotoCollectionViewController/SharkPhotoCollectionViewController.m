@@ -143,6 +143,23 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     return CGSizeMake(photoCellWidth, photoCellWidth);
 }
 
+- (void) willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
+    
+    
+    __weak typeof(self) weakSelf = self;
+    [weakSelf.collectionView.collectionViewLayout invalidateLayout];
+    
+    //KS: TODO - see if we need to reload
+//    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+//        [weakSelf.collectionView.collectionViewLayout invalidateLayout];
+//    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+//        [weakSelf.collectionView reloadData];
+//        
+//    }];
+    
+}
+
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -153,12 +170,17 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
         NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
         
         toVC.transitioningDelegate = self;
+        toVC.navigationController.navigationBarHidden = NO;
+        
+        __weak typeof(self) weakSelf = self;
+        toVC.cancelHandler = ^{
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        };
         
         if (indexPath) {
-            toVC.sharkPhoto = self.sharkPhotos[indexPath.row];
+            SharkPhoto *photo = self.sharkPhotos[indexPath.row];
+            toVC.sharkPhoto = photo;
         }
-        
-        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
     }
 }
 

@@ -46,17 +46,20 @@
 
 - (void)loadImageForSharkPhoto:(SharkPhoto *)sharkPhoto {
     self.sharkImageView.image = nil;
+    self.cellActivityIndicator.hidden = NO;
     [self.cellActivityIndicator startAnimating];
     
     __weak typeof(self) weakSelf = self;
     
     [[DataManager sharedManager] loadImageForSharkPhoto:sharkPhoto successHandler:^(UIImage *image) {
         [weakSelf.cellActivityIndicator stopAnimating];
+        weakSelf.cellActivityIndicator.hidden = YES;
         weakSelf.sharkImageView.image = image;
         
     } errorHandler:^(NSString *localizedErrorMessage) {
         NSLog(@"%@", localizedErrorMessage);
         [weakSelf.cellActivityIndicator stopAnimating];
+        weakSelf.cellActivityIndicator.hidden = YES;
         weakSelf.sharkImageView.image = [UIImage imageNamed:@"Broken"];
     }];
 }
