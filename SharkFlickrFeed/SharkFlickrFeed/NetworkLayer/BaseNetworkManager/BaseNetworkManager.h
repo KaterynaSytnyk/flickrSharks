@@ -14,6 +14,7 @@
 typedef void(^DataTaskErrorHandler)(NSURLSessionDataTask *task, NSError *error);
 typedef void(^DataTaskSuccessHandler)(NSURLSessionDataTask *task, id responseObject);
 typedef void(^UploadTaskCompletionHandler)(NSURLResponse *response, id responseObject, NSError *error);
+typedef void(^DownloadTaskCompletionHandler)(NSURLResponse *response, id responseObject, NSError *error);
 
 @interface BaseNetworkManager : NSObject
 

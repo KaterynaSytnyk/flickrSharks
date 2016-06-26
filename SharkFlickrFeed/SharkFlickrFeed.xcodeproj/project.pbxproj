@@ -30,11 +30,12 @@
 		6843D2531D1F11B6000D4842 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2381D1F11B6000D4842 /* DataManager.m */; };
 		6843D2551D1F11B6000D4842 /* SharkPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D23F1D1F11B6000D4842 /* SharkPhoto.m */; };
 		6843D2591D1F1221000D4842 /* BaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2581D1F1221000D4842 /* BaseNetworkManager.m */; };
-		6843D25E1D1F14E1000D4842 /* FlickrSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */; };
 		6843D2641D1F1BF3000D4842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2631D1F1BF3000D4842 /* Assets.xcassets */; };
 		6843D2671D1F1C0C000D4842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2651D1F1C0C000D4842 /* Main.storyboard */; };
 		6843D2681D1F1C0C000D4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */; };
 		6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */; };
+		6843D2701D2047A6000D4842 /* ImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D26F1D2047A6000D4842 /* ImageCacheManager.m */; };
+		6843D2741D204F5E000D4842 /* ImageNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2731D204F5E000D4842 /* ImageNetworkManager.m */; };
 		FF60871D9BB0C5B1502627DC /* libPods-SharkFlickrFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */; };
 /* End PBXBuildFile section */
 
@@ -85,13 +86,15 @@
 		6843D23F1D1F11B6000D4842 /* SharkPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkPhoto.m; sourceTree = "<group>"; };
 		6843D2571D1F1221000D4842 /* BaseNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworkManager.h; sourceTree = "<group>"; };
 		6843D2581D1F1221000D4842 /* BaseNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworkManager.m; sourceTree = "<group>"; };
-		6843D25C1D1F14E1000D4842 /* FlickrSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchResult.h; sourceTree = "<group>"; };
-		6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchResult.m; sourceTree = "<group>"; };
 		6843D2631D1F1BF3000D4842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6843D2651D1F1C0C000D4842 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6843D2661D1F1C0C000D4842 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6843D26A1D1F4FAC000D4842 /* UIViewController+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utility.h"; sourceTree = "<group>"; };
 		6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utility.m"; sourceTree = "<group>"; };
+		6843D26E1D2047A6000D4842 /* ImageCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheManager.h; sourceTree = "<group>"; };
+		6843D26F1D2047A6000D4842 /* ImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheManager.m; sourceTree = "<group>"; };
+		6843D2721D204F5E000D4842 /* ImageNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageNetworkManager.h; sourceTree = "<group>"; };
+		6843D2731D204F5E000D4842 /* ImageNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageNetworkManager.m; sourceTree = "<group>"; };
 		AD66604A22AEDDC2FD1E319B /* Pods-SharkFlickrFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkFlickrFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharkFlickrFeed/Pods-SharkFlickrFeed.release.xcconfig"; sourceTree = "<group>"; };
 		C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharkFlickrFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,6 +203,7 @@
 				6843D1FF1D1F11B6000D4842 /* ViewControllers */,
 				6843D20D1D1F11B6000D4842 /* Views */,
 				6843D1F71D1F11B6000D4842 /* AppearanceManager */,
+				6843D26D1D204791000D4842 /* ImageCacheManager */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -306,7 +310,7 @@
 		6843D2151D1F11B6000D4842 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				6843D25A1D1F14E1000D4842 /* NetworkModels */,
+				6843D2711D204F4F000D4842 /* ImageNetworkManager */,
 				6843D2561D1F11F7000D4842 /* BaseNetworkManager */,
 				6843D2161D1F11B6000D4842 /* FlickrNetworkManager */,
 				6843D2191D1F11B6000D4842 /* ParsingManager */,
@@ -471,23 +475,6 @@
 			path = BaseNetworkManager;
 			sourceTree = "<group>";
 		};
-		6843D25A1D1F14E1000D4842 /* NetworkModels */ = {
-			isa = PBXGroup;
-			children = (
-				6843D25B1D1F14E1000D4842 /* FlickrSearchResult */,
-			);
-			path = NetworkModels;
-			sourceTree = "<group>";
-		};
-		6843D25B1D1F14E1000D4842 /* FlickrSearchResult */ = {
-			isa = PBXGroup;
-			children = (
-				6843D25C1D1F14E1000D4842 /* FlickrSearchResult.h */,
-				6843D25D1D1F14E1000D4842 /* FlickrSearchResult.m */,
-			);
-			path = FlickrSearchResult;
-			sourceTree = "<group>";
-		};
 		6843D2691D1F4F98000D4842 /* UIViewController+Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +482,24 @@
 				6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */,
 			);
 			path = "UIViewController+Utility";
+			sourceTree = "<group>";
+		};
+		6843D26D1D204791000D4842 /* ImageCacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D26E1D2047A6000D4842 /* ImageCacheManager.h */,
+				6843D26F1D2047A6000D4842 /* ImageCacheManager.m */,
+			);
+			path = ImageCacheManager;
+			sourceTree = "<group>";
+		};
+		6843D2711D204F4F000D4842 /* ImageNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6843D2721D204F5E000D4842 /* ImageNetworkManager.h */,
+				6843D2731D204F5E000D4842 /* ImageNetworkManager.m */,
+			);
+			path = ImageNetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6843D2741D204F5E000D4842 /* ImageNetworkManager.m in Sources */,
 				6843D24C1D1F11B6000D4842 /* NSError+Utility.m in Sources */,
 				6843D2471D1F11B6000D4842 /* SharkPhotoDetailsViewController.m in Sources */,
 				6843D2591D1F1221000D4842 /* BaseNetworkManager.m in Sources */,
@@ -636,10 +642,10 @@
 				6843D24E1D1F11B6000D4842 /* UIColor+Utility.m in Sources */,
 				6843D24B1D1F11B6000D4842 /* ParsingManager.m in Sources */,
 				6843D2401D1F11B6000D4842 /* AppearanceManager.m in Sources */,
-				6843D25E1D1F14E1000D4842 /* FlickrSearchResult.m in Sources */,
 				6843D2481D1F11B6000D4842 /* NoPhotoCollectionViewCell.m in Sources */,
 				6843D2511D1F11B6000D4842 /* GlobalLocalizations.m in Sources */,
 				6843D2521D1F11B6000D4842 /* AppDelegate.m in Sources */,
+				6843D2701D2047A6000D4842 /* ImageCacheManager.m in Sources */,
 				6843D2441D1F11B6000D4842 /* BouncePresentAnimationController.m in Sources */,
 				6843D24F1D1F11B6000D4842 /* UIFont+Utility.m in Sources */,
 				6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GlobalConstants.h"
+#import <UIKit/UIKit.h>
 
 @class SharkPhoto;
 
@@ -18,5 +19,14 @@
 //KS: returns an array of SharkPhotos
 - (void)getSharkPhotosWithSuccessHandler:(SharkPhotosFeedSuccessHandler)successHandler
                             errorHandler:(DefaultErrorHandler)errorHandler;
+
+//KS: updates SharkPhoto will full details
+- (void)loadSharkPhotoDetails:(SharkPhoto *)sharkPhoto
+           withSuccessHandler:(DefaultSuccessHandler)successHandler
+                 errorHandler:(DefaultErrorHandler)errorHandler;
+
+- (void)loadImageForSharkPhoto:(SharkPhoto *)sharkPhoto
+          successHandler:(ImageLoadSuccessHandler)successHandler
+            errorHandler:(DefaultErrorHandler)errorHandler;
 
 @end
