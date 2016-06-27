@@ -36,6 +36,9 @@
 		6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D26B1D1F4FAC000D4842 /* UIViewController+Utility.m */; };
 		6843D2701D2047A6000D4842 /* ImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D26F1D2047A6000D4842 /* ImageCacheManager.m */; };
 		6843D2741D204F5E000D4842 /* ImageNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843D2731D204F5E000D4842 /* ImageNetworkManager.m */; };
+		68A66B131D20C4AF00F4862B /* PendingOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A66B121D20C4AF00F4862B /* PendingOperations.m */; };
+		68A66B161D20C4BD00F4862B /* ImageFiltration.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A66B151D20C4BD00F4862B /* ImageFiltration.m */; };
+		68A66B191D20C4CC00F4862B /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A66B181D20C4CC00F4862B /* ImageDownloader.m */; };
 		FF60871D9BB0C5B1502627DC /* libPods-SharkFlickrFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,12 @@
 		6843D26F1D2047A6000D4842 /* ImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheManager.m; sourceTree = "<group>"; };
 		6843D2721D204F5E000D4842 /* ImageNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageNetworkManager.h; sourceTree = "<group>"; };
 		6843D2731D204F5E000D4842 /* ImageNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageNetworkManager.m; sourceTree = "<group>"; };
+		68A66B111D20C4AF00F4862B /* PendingOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingOperations.h; sourceTree = "<group>"; };
+		68A66B121D20C4AF00F4862B /* PendingOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingOperations.m; sourceTree = "<group>"; };
+		68A66B141D20C4BD00F4862B /* ImageFiltration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFiltration.h; sourceTree = "<group>"; };
+		68A66B151D20C4BD00F4862B /* ImageFiltration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFiltration.m; sourceTree = "<group>"; };
+		68A66B171D20C4CC00F4862B /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		68A66B181D20C4CC00F4862B /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
 		AD66604A22AEDDC2FD1E319B /* Pods-SharkFlickrFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkFlickrFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharkFlickrFeed/Pods-SharkFlickrFeed.release.xcconfig"; sourceTree = "<group>"; };
 		C0929A0FAFCDF2B19218AFD0 /* libPods-SharkFlickrFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharkFlickrFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -436,6 +445,7 @@
 				6843D2351D1F11B6000D4842 /* AppDelegate.m */,
 				6843D2361D1F11B6000D4842 /* DataManager */,
 				6843D2391D1F11B6000D4842 /* Models */,
+				68A66B0D1D20C47200F4862B /* Concurrency */,
 			);
 			path = BusinessLayer;
 			sourceTree = "<group>";
@@ -500,6 +510,43 @@
 				6843D2731D204F5E000D4842 /* ImageNetworkManager.m */,
 			);
 			path = ImageNetworkManager;
+			sourceTree = "<group>";
+		};
+		68A66B0D1D20C47200F4862B /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				68A66B0E1D20C4A300F4862B /* PendingOperations */,
+				68A66B0F1D20C4A300F4862B /* ImageFiltration */,
+				68A66B101D20C4A300F4862B /* ImageDownloader */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		68A66B0E1D20C4A300F4862B /* PendingOperations */ = {
+			isa = PBXGroup;
+			children = (
+				68A66B111D20C4AF00F4862B /* PendingOperations.h */,
+				68A66B121D20C4AF00F4862B /* PendingOperations.m */,
+			);
+			path = PendingOperations;
+			sourceTree = "<group>";
+		};
+		68A66B0F1D20C4A300F4862B /* ImageFiltration */ = {
+			isa = PBXGroup;
+			children = (
+				68A66B141D20C4BD00F4862B /* ImageFiltration.h */,
+				68A66B151D20C4BD00F4862B /* ImageFiltration.m */,
+			);
+			path = ImageFiltration;
+			sourceTree = "<group>";
+		};
+		68A66B101D20C4A300F4862B /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				68A66B171D20C4CC00F4862B /* ImageDownloader.h */,
+				68A66B181D20C4CC00F4862B /* ImageDownloader.m */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +680,7 @@
 				6843D2501D1F11B6000D4842 /* LoggingManager.m in Sources */,
 				6843D2451D1F11B6000D4842 /* ShrinkDismissAnimationController.m in Sources */,
 				6843D2461D1F11B6000D4842 /* SharkPhotoCollectionViewController.m in Sources */,
+				68A66B161D20C4BD00F4862B /* ImageFiltration.m in Sources */,
 				6843D24D1D1F11B6000D4842 /* NSString+Utility.m in Sources */,
 				6843D2551D1F11B6000D4842 /* SharkPhoto.m in Sources */,
 				6843D2491D1F11B6000D4842 /* SharkPhotoCollectionViewCell.m in Sources */,
@@ -643,12 +691,14 @@
 				6843D24B1D1F11B6000D4842 /* ParsingManager.m in Sources */,
 				6843D2401D1F11B6000D4842 /* AppearanceManager.m in Sources */,
 				6843D2481D1F11B6000D4842 /* NoPhotoCollectionViewCell.m in Sources */,
+				68A66B191D20C4CC00F4862B /* ImageDownloader.m in Sources */,
 				6843D2511D1F11B6000D4842 /* GlobalLocalizations.m in Sources */,
 				6843D2521D1F11B6000D4842 /* AppDelegate.m in Sources */,
 				6843D2701D2047A6000D4842 /* ImageCacheManager.m in Sources */,
 				6843D2441D1F11B6000D4842 /* BouncePresentAnimationController.m in Sources */,
 				6843D24F1D1F11B6000D4842 /* UIFont+Utility.m in Sources */,
 				6843D26C1D1F4FAC000D4842 /* UIViewController+Utility.m in Sources */,
+				68A66B131D20C4AF00F4862B /* PendingOperations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

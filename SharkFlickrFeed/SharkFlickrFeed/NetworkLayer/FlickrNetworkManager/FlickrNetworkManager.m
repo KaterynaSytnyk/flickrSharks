@@ -46,25 +46,7 @@
     // create session, setup self as delegate for downloads
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.allowsCellularAccess = NO;
-    
-    //        NSURL *baseURL = [NSURL URLWithString:BaseServerURLString];
-    //        sharedManager.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
-    //        sharedManager.sessionManager.requestSerializer = [AFJSONRequestSerializer new];
-    //        sharedManager.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    
-    
-//    let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-//    configuration.allowsCellularAccess = false
-//    configuration.URLCache?.diskCapacity
-//    configuration.URLCache?.memoryCapacity
-//    let smallCache = NSURLCache(memoryCapacity: 512000, diskCapacity: 2000000, diskPath: nil)
-//    configuration.URLCache = smallCache
-//    configuration.URLCache?.diskCapacity
-//    configuration.URLCache?.memoryCapacity
-//    let session = NSURLSession(configuration: configuration)
-    
-   // self.session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
-
+    //KS: TODO - finish NSURLSession setup instead of AFNetworking
 }
 
 #pragma mark - Network Calls

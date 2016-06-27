@@ -10,4 +10,19 @@
 
 @implementation SharkPhoto
 
+- (BOOL)hasImage {
+    return _image != nil;
+}
+
+
+- (BOOL)isFailed {
+    return _failed;
+}
+
+
+- (BOOL)isFiltered {
+    return _filtered;
+}
+
+
 @end

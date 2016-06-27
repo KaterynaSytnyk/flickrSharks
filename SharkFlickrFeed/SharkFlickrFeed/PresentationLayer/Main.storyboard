@@ -133,13 +133,25 @@
                                     <action selector="cancelTapped:" destination="fBq-LY-GnZ" eventType="touchUpInside" id="YKo-sB-Rq5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVW-IF-opb">
+                                <rect key="frame" x="20" y="518" width="73" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadTapped:" destination="fBq-LY-GnZ" eventType="touchUpInside" id="YMf-RA-IOt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dyk-Lq-WBD" firstAttribute="leading" secondItem="K6H-Vi-0JA" secondAttribute="leading" id="3gQ-GX-XRG"/>
                             <constraint firstItem="mh0-FC-xjX" firstAttribute="top" secondItem="OF8-yS-Ttk" secondAttribute="bottom" constant="10" id="HTj-pK-gbp"/>
                             <constraint firstAttribute="trailing" secondItem="dyk-Lq-WBD" secondAttribute="trailing" id="KK0-7g-hO7"/>
+                            <constraint firstItem="OVW-IF-opb" firstAttribute="leading" secondItem="K6H-Vi-0JA" secondAttribute="leading" constant="20" id="OfN-Pt-RIe"/>
                             <constraint firstItem="dyk-Lq-WBD" firstAttribute="top" secondItem="OF8-yS-Ttk" secondAttribute="bottom" id="W6f-1u-w7C"/>
+                            <constraint firstItem="g0t-Gq-DAG" firstAttribute="top" secondItem="OVW-IF-opb" secondAttribute="bottom" constant="20" id="hsy-ij-YSU"/>
                             <constraint firstItem="g0t-Gq-DAG" firstAttribute="top" secondItem="dyk-Lq-WBD" secondAttribute="bottom" id="i03-Dz-XhM"/>
                             <constraint firstItem="mh0-FC-xjX" firstAttribute="leading" secondItem="K6H-Vi-0JA" secondAttribute="leading" constant="20" id="xB3-cb-lCL"/>
                         </constraints>
@@ -158,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ls-4b-6Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="535"/>
+            <point key="canvasLocation" x="105" y="377"/>
         </scene>
     </scenes>
     <resources>
