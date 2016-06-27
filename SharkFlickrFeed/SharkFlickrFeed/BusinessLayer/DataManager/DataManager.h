@@ -29,4 +29,10 @@
           successHandler:(ImageLoadSuccessHandler)successHandler
             errorHandler:(DefaultErrorHandler)errorHandler;
 
+//KS: TODO - instead of isLarge create an enum for photo sizes
+- (void)loadImageForSharkPhoto:(SharkPhoto *)sharkPhoto
+                       isLarge:(BOOL)isLarge
+                successHandler:(ImageLoadSuccessHandler)successHandler
+                  errorHandler:(DefaultErrorHandler)errorHandler;
+
 @end

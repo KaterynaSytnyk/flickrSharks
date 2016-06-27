@@ -9,6 +9,7 @@
 #import "SharkPhotoDetailsViewController.h"
 #import "SharkPhoto.h"
 #import "DataManager.h"
+#import "UIViewController+Utility.h"
 
 @interface SharkPhotoDetailsViewController ()
 
@@ -33,26 +34,20 @@
         self.sharkImageView.image = self.sharkPhoto.largeImage;
     } else {
         self.sharkImageView.image = self.sharkPhoto.thumbnail;
+        
+        __weak typeof(self) weakSelf = self;
+        
+        [self showHideProgressHUD:YES];
+        [[DataManager sharedManager] loadImageForSharkPhoto:self.sharkPhoto isLarge:YES successHandler:^(UIImage *image) {
+            [weakSelf showHideProgressHUD:NO];
+            weakSelf.sharkImageView.image = image;
+            
+        } errorHandler:^(NSString *localizedErrorMessage) {
+            NSLog(@"%@", localizedErrorMessage);
+            [weakSelf showHideProgressHUD:NO];
+            [weakSelf showAlertWithLocalizedTitle:@"Error" localizedMessage:@"Failed loading full sized photo"];
+        }];
     }
-    
-//    // 1
-//    if(self.flickrPhoto.largeImage) {
-//        self.imageView.image = self.flickrPhoto.largeImage;
-//    } else {
-//        // 2
-//        self.imageView.image = self.flickrPhoto.thumbnail;
-//        // 3
-//        [Flickr loadImageForPhoto:self.flickrPhoto thumbnail:NO
-//                  completionBlock:^(UIImage *photoImage, NSError *error) {
-//                      if(!error) {
-//                          // 4
-//                          dispatch_async(dispatch_get_main_queue(), ^{
-//                              self.imageView.image =
-//                              self.flickrPhoto.largeImage;
-//                          });
-//                      }
-//                  }];
-//    }
 }
 
 

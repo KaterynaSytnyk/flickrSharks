@@ -18,7 +18,7 @@ static NSString *const NoJsonCallbackParameterString = @"nojsoncallback";
 static NSString *const PageParameterString = @"page";
 static NSString *const ExtrasParameterString = @"extras";
 
-static NSString *const SharkSearchString = @"shark";
+static NSString *const SharkSearchString = @"tiger shark";
 static NSString *const FlickrAPIKey = @"949e98778755d1982f537d56236bbb42";
 static NSString *const FlickrSearchMethodName = @"flickr.photos.search";
 static NSString *const FormatParameterJSON = @"json";

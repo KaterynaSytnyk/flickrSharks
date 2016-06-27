@@ -104,11 +104,6 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     return count;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
-
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell;
@@ -126,13 +121,6 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
-
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return YES;
-}
-
 #pragma mark <UICollectionViewDelegateFlowLayout>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewFlowLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -148,15 +136,14 @@ static NSString *const CurrentMessage = @"Loading Sharks..";
     
     
     __weak typeof(self) weakSelf = self;
-    [weakSelf.collectionView.collectionViewLayout invalidateLayout];
     
-    //KS: TODO - see if we need to reload
-//    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-//        [weakSelf.collectionView.collectionViewLayout invalidateLayout];
-//    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-//        [weakSelf.collectionView reloadData];
-//        
-//    }];
+    //KS: TODO - finish this up, don't need to reload each time
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [weakSelf.collectionView.collectionViewLayout invalidateLayout];
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [weakSelf.collectionView reloadData];
+        
+    }];
     
 }
 

@@ -61,8 +61,16 @@
 - (void)loadImageForSharkPhoto:(SharkPhoto *)sharkPhoto
                 successHandler:(ImageLoadSuccessHandler)successHandler
                   errorHandler:(DefaultErrorHandler)errorHandler {
+    [self loadImageForSharkPhoto:sharkPhoto isLarge:NO successHandler:successHandler errorHandler:errorHandler];
+}
+
+
+- (void)loadImageForSharkPhoto:(SharkPhoto *)sharkPhoto
+                       isLarge:(BOOL)isLarge
+                successHandler:(ImageLoadSuccessHandler)successHandler
+                  errorHandler:(DefaultErrorHandler)errorHandler {
     
-    NSString *imageURLString = sharkPhoto.thumbnailImageURL;
+    NSString *imageURLString = isLarge ? sharkPhoto.largeImageURL : sharkPhoto.thumbnailImageURL;
     
     if ([NSString sh_isNilOrEmptyString:imageURLString]) {
         if (errorHandler) {
@@ -74,7 +82,7 @@
     //KS: Check if this image is already saved in Cache - if it is - return righ away and don't trigger a network call
     UIImage *cachedImage = [[ImageCacheManager sharedManager] getCachedImageForKey:imageURLString];
     if (cachedImage) {
-        sharkPhoto.thumbnail = cachedImage;
+        sharkPhoto.thumbnail = cachedImage;//KS: TODO - caching thumbnail only, add large
         if (successHandler) {
             successHandler(cachedImage);
         }
