@@ -16,7 +16,7 @@ Downloading an image using NSURLSession directly though
 - I showed how I’d handle base network manager.. it has base url as Flickr which isn’t quite right since FlickrNetworkManager should encapsulate all flickr details but since normally I’d be the same base url for the whole app I left it in place
 - I showed how I’d handle different status codes from the network, there’s a TODO to handle custom Flickr search ones
 - Not making a separate request in the details view controller, just loading image - need to make another request to the 2nd api which returns an individual photo details with photo user, tags, etc.
-- No pagination, only first page returned in the collection view for now
+- No pagination, only first page returned in the collection view for now, page is a parameter, need to tie triggering next page for a range
 - Need to finish up rotation - working only in certain positions, need to finish up
 - Pull to refresh not done - need to create a custom view and reload table
 - Caching is just a very rough version to showcase how it'd be played together in a data manager
